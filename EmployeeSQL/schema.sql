@@ -1,3 +1,6 @@
+-- import csv files after creating the tables in the same order 
+-- that the tables were created.
+
 CREATE TABLE titles (
     title_id VARCHAR PRIMARY KEY,
     title VARCHAR
@@ -15,7 +18,8 @@ CREATE TABLE employees (
     );
 
 CREATE TABLE salaries (
-    emp_no INTEGER,
+    emp_no INTEGER PRIMARY KEY,
+	FOREIGN KEY (emp_no) REFERENCES employees(emp_no),
     salary INTEGER
     );
 
@@ -39,13 +43,3 @@ CREATE TABLE dept_manager (
     FOREIGN KEY (emp_no) REFERENCES employees(emp_no),
     PRIMARY KEY (dept_no, emp_no)
     );
-
-ALTER TABLE salaries 
-ADD COLUMN salary_id SERIAL;
-
-ALTER TABLE salaries 
-ADD PRIMARY KEY (salary_id);
-
-ALTER TABLE salaries 
-ADD FOREIGN KEY (emp_no) 
-REFERENCES employees (emp_no);
