@@ -7,7 +7,7 @@
 * schema.sql creates the tables necessary for the 6 CSV files.
 
 ### Data Analysis
-* query.sql was created to run various queries on the database.
+* query.sql runs various queries on the database.
 
 ### Bonus Analysis
 * Python was used to further analyze the database.
