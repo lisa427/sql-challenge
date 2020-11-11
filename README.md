@@ -1,13 +1,13 @@
 # sql-challenge
 
-## Data Modeling
+### Data Modeling
 * An EDR was created using the 6 provided CSV files in the Resources folder.
 
-## Data Engineering
+### Data Engineering
 * schema.sql creates the tables necessary for the 6 CSV files.
 
-## Data Analysis
+### Data Analysis
 * query.sql was created to run various queries on the database.
 
-## Bonus Analysis
+### Bonus Analysis
 * Python was used to further analyze the database.
